@@ -30,9 +30,14 @@ public class FizzBuzzTest {
 	public void fizzPlayWithNonDivisible() {
 		assertEquals("4", fizzBuzz.play(4));
 	}
-	
+
 	@Test
 	public void buzzPlay() {
 		assertEquals("Buzz", fizzBuzz.play(5));
+	}
+
+	@Test
+	public void buzzPlayWithOtherValues() {
+		assertEquals("Fizz", fizzBuzz.play(10));
 	}
 }
