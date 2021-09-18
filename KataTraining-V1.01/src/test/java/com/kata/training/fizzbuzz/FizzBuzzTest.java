@@ -38,6 +38,6 @@ public class FizzBuzzTest {
 
 	@Test
 	public void buzzPlayWithOtherValues() {
-		assertEquals("Fizz", fizzBuzz.play(10));
+		assertEquals("Buzz", fizzBuzz.play(10));
 	}
 }
