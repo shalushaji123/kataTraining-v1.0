@@ -12,4 +12,9 @@ public class FizzBuzzTest {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		assertEquals("Fizz", fizzBuzz.play(3));
 	}
+	@Test
+	public void fizzPlayWithOtherValues() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		assertEquals("Fizz", fizzBuzz.play(6));
+	}
 }
