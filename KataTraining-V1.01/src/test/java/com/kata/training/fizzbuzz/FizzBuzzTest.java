@@ -22,6 +22,6 @@ public class FizzBuzzTest {
 	@Test
 	public void fizzPlayWithNonDivisible() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
-		assertEquals("Fizz", fizzBuzz.play(5));
+		assertEquals("5", fizzBuzz.play(5));
 	}
 }
