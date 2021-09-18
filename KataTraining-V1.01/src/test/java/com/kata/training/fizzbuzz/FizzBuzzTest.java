@@ -10,8 +10,6 @@ public class FizzBuzzTest {
 	@Test
 	public void fizzPlay() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
-		int number = 3;
-		String response = fizzBuzz.play(number);
-		assertEquals("Fizz", response);
+		assertEquals("Fizz", fizzBuzz.play(3));
 	}
 }
