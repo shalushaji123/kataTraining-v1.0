@@ -10,11 +10,12 @@ import com.kata.training.fizzbuzz.FizzBuzz;
 @SpringBootTest
 public class FizzBuzzTest {
 	FizzBuzz fizzBuzz;
+
 	@BeforeEach
 	public void init() {
 		fizzBuzz = new FizzBuzz();
 	}
-	
+
 	@Test
 	public void fizzPlay() {
 		assertEquals("Fizz", fizzBuzz.play(3));
@@ -27,6 +28,11 @@ public class FizzBuzzTest {
 
 	@Test
 	public void fizzPlayWithNonDivisible() {
-		assertEquals("5", fizzBuzz.play(5));
-	}	
+		assertEquals("4", fizzBuzz.play(4));
+	}
+	
+	@Test
+	public void buzzPlay() {
+		assertEquals("Buzz", fizzBuzz.play(5));
+	}
 }
